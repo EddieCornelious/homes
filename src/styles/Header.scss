@@ -1,0 +1,22 @@
+@import "variables";
+
+.header ._nav__wrap {
+  display: flex;
+  justify-content: space-around;
+}
+.header {
+  z-index: 300;
+  position: sticky;
+  top: 0;
+}
+
+._nav__wrap li {
+  display: inline-block;
+  font-size: 2rem;
+  list-style: none;
+  color: white;
+}
+
+._nav__wrap li:hover {
+  color: $red;
+}
