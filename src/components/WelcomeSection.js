@@ -1,6 +1,8 @@
 import React from "react";
 import "../styles/WelcomeSection.scss";
 
+import WelcomeCard from "./WelcomeCard.js";
+
 class WelcomeSection extends React.Component {
   constructor(props) {
     super(props);
@@ -30,9 +32,27 @@ class WelcomeSection extends React.Component {
             </p>
           </div>
           <div className="row">
-            <div className="col-md-4">lol</div>
-            <div className="col-md-4">lol</div>
-            <div className="col-md-4">lol</div>
+            <div className="col-md-4">
+              <WelcomeCard
+                id="0"
+                text="Everday Open"
+                info="Consectetuer adipiscing elit lorem ipsum dolor sit amet, sed diam nonummy nibh euismod."
+              />
+            </div>
+            <div className="col-md-4">
+              <WelcomeCard
+                id="1"
+                text="special dishes"
+                info="Consectetuer adipiscing elit lorem ipsum dolor sit amet, sed diam nonummy nibh euismod."
+              />
+            </div>
+            <div className="col-md-4">
+              <WelcomeCard
+                id="2"
+                text="expert chef"
+                info="Consectetuer adipiscing elit lorem ipsum dolor sit amet, sed diam nonummy nibh euismod."
+              />
+            </div>
           </div>
         </div>
       </section>

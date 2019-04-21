@@ -1,0 +1,36 @@
+.main__menu__photos__wrap {
+  height: 100vh;
+  position: relative;
+}
+.main__menu__photos__left {
+  height: 100%;
+  width: 60%;
+  background-color: red;
+  float: left;
+  padding: 2rem;
+}
+
+.main__menu__photos__right {
+  width: 40%;
+  float: right;
+  height: 100%;
+}
+
+.main__menu__photos__top {
+  background-color: purple;
+  height: 50%;
+  border-left: 1rem solid white;
+  border-bottom: 1rem solid white;
+  padding: 2rem;
+}
+
+.main__menu__photos__bottom {
+  background-color: green;
+  height: 50%;
+  border-left: 1rem solid white;
+  padding: 2rem;
+}
+.main__menu__photos__top p {
+  position: absolute;
+  right: 10%;
+}
