@@ -1,13 +1,14 @@
 .main__menu__photos__wrap {
   height: 100vh;
   position: relative;
+  margin-top: 10rem;
 }
-.main__menu__photos__left {
+.main__menu__photos__left__parent {
   height: 100%;
   width: 60%;
-  background-color: red;
   float: left;
-  padding: 2rem;
+  position: relative;
+  overflow: hidden;
 }
 
 .main__menu__photos__right {
@@ -15,22 +16,55 @@
   float: right;
   height: 100%;
 }
-
-.main__menu__photos__top {
-  background-color: purple;
+.main__menu__photos__top__parent {
   height: 50%;
   border-left: 1rem solid white;
   border-bottom: 1rem solid white;
-  padding: 2rem;
+  position: relative;
+  overflow: hidden;
 }
 
-.main__menu__photos__bottom {
-  background-color: green;
+.main__menu__photos__bottom__parent {
   height: 50%;
   border-left: 1rem solid white;
-  padding: 2rem;
+  position: relative;
+  overflow: hidden;
 }
-.main__menu__photos__top p {
+
+.left__bg,
+.top__bg,
+.bottom__bg {
   position: absolute;
-  right: 10%;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  transition: all 2s ease-out;
+}
+
+.left__bg:hover:after,
+.top__bg:hover:after,
+.bottom__bg:hover:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(242, 60, 80, 0.7);
+  position: absolute;
+}
+.left__bg:hover,
+.top__bg:hover,
+.bottom__bg:hover {
+  transform: scale(1.2);
+}
+
+.left__text,
+.bottom__text,
+.top__text {
+  display: inline-block;
+  color: white;
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  font-size: 2.5rem;
+  left: 10%;
 }
