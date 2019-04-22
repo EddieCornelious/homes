@@ -1,0 +1,39 @@
+.menu {
+  height: 75vh;
+  padding: 10rem;
+  position: relative;
+}
+.menu__header__wrap {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  text-align: center;
+}
+.menu__boast {
+  text-align: center;
+  vertical-align: middle;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+.menu__title {
+  font-size: 4rem;
+  font-weight: bolder;
+}
+.menu__row {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.underline {
+  width: 5rem;
+  height: 0.3rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+  position: relative;
+  background-color: black;
+}
+
+.menu__item {
+  display: inline-block;
+}

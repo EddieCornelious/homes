@@ -1,7 +1,7 @@
 .main__menu__photos__wrap {
   height: 100vh;
   position: relative;
-  margin-top: 10rem;
+  padding-top: 10rem;
 }
 .main__menu__photos__left__parent {
   height: 100%;
@@ -54,7 +54,7 @@
 .left__bg:hover,
 .top__bg:hover,
 .bottom__bg:hover {
-  transform: scale(1.2);
+  transform: scale(1.2) rotate(6deg);
 }
 
 .left__text,
