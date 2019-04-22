@@ -40,3 +40,9 @@
 .welcome__section__card__wrap {
   padding: 5rem;
 }
+
+@media only screen and (max-width: 928px) {
+  .welcome__section {
+    height: 100vh;
+  }
+}

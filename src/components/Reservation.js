@@ -6,7 +6,9 @@ const Reservation = () => {
     <section className="reservation">
       <h3>Reservation</h3>
       <p>(818)-443-5567 for details</p>
-      <a href="#">Reserve</a>
+      <a className="wow rubberBand" href="#">
+        Reserve Now
+      </a>
     </section>
   );
 };

@@ -1,22 +1,30 @@
 @import "variables";
 
 .header ._nav__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
+  list-style-type: none;
 }
 .header {
   z-index: 300;
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
 }
 
-._nav__wrap li {
-  display: inline-block;
+._nav__wrap li a {
   font-size: 2rem;
   list-style: none;
   color: white;
 }
 
-._nav__wrap li:hover {
+._nav__wrap li a {
+  text-decoration: none;
+}
+
+._nav__wrap li a:hover {
   color: $red;
 }

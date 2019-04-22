@@ -11,10 +11,18 @@ class Header extends React.Component {
       <div className="header">
         <div className="container">
           <ul className="_nav__wrap">
-            <li>Home</li>
-            <li>About Us</li>
-            <li>Drinks</li>
-            <li>Meals</li>
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#about">About Us</a>
+            </li>
+            <li>
+              <a href="#drinks">Drinks</a>
+            </li>
+            <li>
+              <a href="#main">Meals</a>
+            </li>
           </ul>
         </div>
       </div>

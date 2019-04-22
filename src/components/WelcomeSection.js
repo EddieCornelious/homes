@@ -11,7 +11,7 @@ class WelcomeSection extends React.Component {
   render() {
     return (
       <section className="welcome__section">
-        <div class="container">
+        <div className="container">
           <div className="welcome__section__text__wrap">
             <h3 className="welcome__section__header">
               Welcome to

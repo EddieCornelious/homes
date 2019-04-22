@@ -39,6 +39,8 @@
   height: 100%;
   background-position: center;
   background-size: cover;
+  -webkit-transition: all 2s ease-out;
+  -o-transition: all 2s ease-out;
   transition: all 2s ease-out;
 }
 
@@ -54,6 +56,8 @@
 .left__bg:hover,
 .top__bg:hover,
 .bottom__bg:hover {
+  -webkit-transform: scale(1.2) rotate(6deg);
+  -ms-transform: scale(1.2) rotate(6deg);
   transform: scale(1.2) rotate(6deg);
 }
 
@@ -67,4 +71,16 @@
   left: 0;
   font-size: 2.5rem;
   left: 10%;
+}
+
+@media only screen and (max-width: 803px) {
+  .main__menu__photos__wrap {
+    height: 75vh;
+  }
+}
+
+@media only screen and (max-width: 567px) {
+  .main__menu__photos__wrap {
+    height: 50vh;
+  }
 }
