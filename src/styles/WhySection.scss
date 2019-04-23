@@ -3,6 +3,7 @@
 .why__section {
   height: 50vh;
   padding: 10rem;
+  background-color: #fafafa;
 }
 
 .why__card {
@@ -11,6 +12,9 @@
   svg {
     fill: $primary;
     width: 8rem;
+  }
+  h2 {
+    text-transform: capitalize;
   }
   p {
     line-height: 1.9;
@@ -23,5 +27,6 @@
   transition: all 0.5s ease;
   margin-bottom: 1rem;
   width: 11rem;
+
   text-align: center;
 }

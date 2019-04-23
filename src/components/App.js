@@ -2,7 +2,8 @@ import "../styles/App.scss";
 import React from "react";
 import Header from "./Header.js";
 import WhySection from "./WhySection.js";
-import CoachSection from "./CoachSection.js";
+import CoachesSection from "./CoachesSection.js";
+import PlansSection from "./PlansSection.js";
 
 class App extends React.Component {
   render() {
@@ -16,7 +17,8 @@ class App extends React.Component {
           </div>
         </div>
         <WhySection />
-        <CoachSection />
+        <CoachesSection />
+        <PlansSection />
       </div>
     );
   }

@@ -1,13 +1,13 @@
 import "../styles/SectionHeader.scss";
 import React from "react";
 
-const CoachSection = props => {
+const SectionHeader = props => {
   return (
-    <div clasName="section__header">
-      <p>Coaches</p>
-      <h3>Choose a coach to customize the experience</h3>
+    <div className="section__header">
+      <p>{props.title}</p>
+      <h3>{props.subTitle}</h3>
     </div>
   );
 };
 
-export default CoachSection;
+export default SectionHeader;
