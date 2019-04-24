@@ -1,0 +1,22 @@
+@import "variables.scss";
+
+.appointment__section {
+  height: 65vh;
+  background-color: red;
+  padding: 4rem;
+  margin-top: 4rem;
+}
+
+.map {
+  background-color: green;
+  float: left;
+  height: 100%;
+  width: 50%;
+}
+
+.booking {
+  background-color: pink;
+  float: right;
+  height: 100%;
+  width: 50%;
+}

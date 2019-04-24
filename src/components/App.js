@@ -4,6 +4,8 @@ import Header from "./Header.js";
 import WhySection from "./WhySection.js";
 import CoachesSection from "./CoachesSection.js";
 import PlansSection from "./PlansSection.js";
+import TestimonySection from "./TestimonySection.js";
+import AppointmentSection from "./AppointmentSection.js";
 
 class App extends React.Component {
   render() {
@@ -19,8 +21,8 @@ class App extends React.Component {
         <WhySection />
         <CoachesSection />
         <PlansSection />
-        <section className="testimony_section">lol</section>
-        <section>Appoint</section>
+        <TestimonySection />
+        <AppointmentSection />
       </div>
     );
   }
