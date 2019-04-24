@@ -6,6 +6,7 @@ import CoachesSection from "./CoachesSection.js";
 import PlansSection from "./PlansSection.js";
 import TestimonySection from "./TestimonySection.js";
 import AppointmentSection from "./AppointmentSection.js";
+import Footer from "./Footer.js";
 
 class App extends React.Component {
   render() {
@@ -23,6 +24,7 @@ class App extends React.Component {
         <PlansSection />
         <TestimonySection />
         <AppointmentSection />
+        <Footer />
       </div>
     );
   }
