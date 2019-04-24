@@ -19,6 +19,8 @@ class App extends React.Component {
         <WhySection />
         <CoachesSection />
         <PlansSection />
+        <section className="testimony_section">lol</section>
+        <section>Appoint</section>
       </div>
     );
   }

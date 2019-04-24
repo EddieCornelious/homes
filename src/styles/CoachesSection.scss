@@ -5,7 +5,6 @@
   padding: 4rem;
   position: relative;
 }
-
 .coach__card {
   background-color: white;
   height: 40rem;
@@ -15,7 +14,6 @@
   background-size: cover;
   z-index: 100;
 }
-
 .bg {
   content: "";
   background-color: rgba(125, 255, 162, 0.8);
@@ -28,12 +26,10 @@
   z-index: 600;
   transition: all 0.5s;
   text-align: center;
-
   .bg__content {
     color: white;
     margin: 0 auto;
     padding: 6rem;
-
     h3 {
       font-size: 3rem;
       margin-bottom: 2rem;
@@ -46,7 +42,6 @@
 .bg:hover {
   opacity: 1;
 }
-
 /* no-gutters Class Rules */
 .row.no-gutters {
   margin-right: 0;
