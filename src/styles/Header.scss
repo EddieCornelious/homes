@@ -1,0 +1,57 @@
+.header {
+  height: 100vh;
+  background: url("../images/hero.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+
+  .header__content {
+    text-align: center;
+    position: relative;
+    top: 40%;
+
+    color: white;
+    h1 {
+      font-size: 6rem;
+    }
+    a {
+      padding: 2rem 2rem;
+      background-color: white;
+      color: black;
+      display: inline-block;
+
+      margin-top: 1rem;
+    }
+  }
+}
+
+._nav {
+  z-index: 200;
+  background-color: red;
+  padding: 2rem 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  overflow: hidden;
+
+  ul .items__wrap {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    float: left;
+  }
+
+  ul div li {
+    display: inline-block;
+    font-size: 2rem;
+
+    ul div li a {
+      text-decoration: none;
+    }
+  }
+
+  ul .logo__wrap {
+  }
+}
