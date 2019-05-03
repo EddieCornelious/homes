@@ -6,11 +6,12 @@ const PropertyCard = props => {
   const data = homes[props.id];
   return (
     <div className="property__card">
-      <div
-        style={{ backgroundImage: "url(" + data.img + ")" }}
-        className="property__card__top"
-      >
-        <a href="#">{data.status === 1 ? "for sale" : "for rent"}</a>
+      <div className="property__card__top">
+        <img alt="property image" src={data.img} />
+        <a className="availability" href="#">
+          {data.status === 1 ? "for sale" : "for rent"}
+        </a>
+        <a className="property__info">View More &rarr;</a>
       </div>
       <div className="property__card__bottom">
         <div className="card__bottom__location">
@@ -53,7 +54,7 @@ const PropertyCard = props => {
 const FeaturedSection = () => {
   return (
     <section className="featured__section">
-      <div className="container">
+      <div className="container-fluid">
         <h1>Featured Section</h1>
         <div className="row">
           <div className="col-md-4">
