@@ -55,7 +55,7 @@ const FeaturedSection = () => {
     <section className="featured__section">
       <div className="container">
         <h1>Featured Section</h1>
-        <div className="row no-gutters">
+        <div className="row">
           <div className="col-md-4">
             <PropertyCard id="0" />
           </div>

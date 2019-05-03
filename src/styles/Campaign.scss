@@ -1,0 +1,40 @@
+@import "variables";
+
+.campaign {
+  background-color: #f6f3f3;
+}
+
+.campaign__right {
+  background-image: url("../images/alexandra-gorn-485551-unsplash.jpg");
+  height: 60rem;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.campaign__left {
+  color: $primary;
+  background-color: #f6f3f3;
+  padding: 10rem;
+  height: 60rem;
+}
+
+.campaign__left__content {
+  margin: 0 auto;
+
+  h3 {
+    font-size: 4rem;
+  }
+  ul li {
+    list-style: none;
+    line-height: 1.9;
+
+    &:before {
+      content: "\2014";
+    }
+  }
+  p {
+    font-size: 7rem;
+  }
+}

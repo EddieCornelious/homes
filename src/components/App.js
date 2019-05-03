@@ -2,7 +2,8 @@ import "../styles/App.scss";
 import React from "react";
 import Nav from "./Nav.js";
 import FeaturedSection from "./FeaturedSection.js";
-
+import Campaign from "./Campaign.js";
+import RealatorsSection from "./RealatorsSection.js";
 class App extends React.Component {
   render() {
     return (
@@ -17,6 +18,8 @@ class App extends React.Component {
         </section>
 
         <FeaturedSection />
+        <Campaign />
+        <RealatorsSection />
       </React.Fragment>
     );
   }
