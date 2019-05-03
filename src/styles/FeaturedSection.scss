@@ -1,9 +1,12 @@
+@import "variables";
+
 .featured__section {
   padding: 10rem;
+  background-color: #f7f8f9;
 }
 
 .property__card {
-  background-color: #f9f7f6;
+  background-color: $white;
   height: 50rem;
   width: 100%;
   margin-bottom: 4rem;
@@ -18,10 +21,10 @@
 
   a {
     padding: 1rem 2rem;
-    background-color: red;
+    background-color: $secondary;
     position: absolute;
     text-decoration: none;
-    color: white;
+    color: $primary;
     border-radius: 0.5rem;
     left: 5%;
     top: 5%;
@@ -32,20 +35,23 @@
 
 .property__card__bottom {
   height: 50%;
-  background-color: #f9f7f6;
+  background-color: $white;
+
   div.bottom__button {
-    background-color: green;
+    background-color: $primary;
     display: flex;
     padding: 1rem 0;
     justify-content: center;
     font-size: 2rem;
+    color: $secondary;
   }
 }
 
 .card__bottom__location {
   text-align: center;
   border-bottom: 1px solid #eee;
-
+  background-color: $white;
+  color: $primary;
   h2 {
     font-size: 2rem;
   }
@@ -64,4 +70,5 @@
 }
 .card__bottom__row p {
   display: inline-block;
+  color: $primary;
 }

@@ -1,25 +1,30 @@
+@import "variables";
+
 .header {
   height: 100vh;
-  background: url("../images/hero.jpg");
+  background-image: linear-gradient(
+      rgba(53, 20, 49, 0.6),
+      rgba(53, 20, 49, 0.6)
+    ),
+    url("../images/hero.jpg");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   width: 100%;
-
   .header__content {
     text-align: center;
     position: relative;
     top: 40%;
 
-    color: white;
+    color: $secondary;
     h1 {
       font-size: 6rem;
     }
     a {
       padding: 2rem 2rem;
       background-color: white;
-      color: black;
+      color: $primary;
       display: inline-block;
 
       margin-top: 1rem;
@@ -29,7 +34,7 @@
 
 ._nav {
   z-index: 200;
-  background-color: red;
+  background-color: $secondary;
   padding: 2rem 0;
   position: fixed;
   width: 100%;
@@ -48,10 +53,11 @@
     font-size: 2rem;
 
     ul div li a {
-      text-decoration: none;
+      color: $primary;
     }
   }
 
   ul .logo__wrap {
+    color: $primary;
   }
 }

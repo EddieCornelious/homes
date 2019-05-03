@@ -1,9 +1,11 @@
 /* Color Theme Swatches in RGBA */
-$black: rgba(0, 0, 0, 1);
-$light-pink: rgba(255, 150, 150, 1);
-$dark-pink: rgba(255, 125, 125, 1);
-$dark-green: rgba(52, 179, 88, 1);
-$light-green: rgba(125, 255, 162, 1);
+/* RGB */
+$brown: rgba(247, 219, 167, 1);
+$blue: rgba(54, 65, 86, 1);
+$purple: rgba(53, 20, 49, 1);
+$white: rgba(255, 255, 250, 1);
+$gray: rgba(81, 80, 82, 1);
 
-$primary: $light-green;
-$secondary: black;
+$primary: $purple;
+$secondary: $white;
+$tertiary: $gray;
