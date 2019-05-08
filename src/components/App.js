@@ -3,7 +3,7 @@ import React from "react";
 import Nav from "./Nav.js";
 import FeaturedSection from "./FeaturedSection.js";
 import Campaign from "./Campaign.js";
-import RealatorsSection from "./RealatorsSection.js";
+import RealtorsSection from "./RealtorsSection.js";
 class App extends React.Component {
   render() {
     return (
@@ -19,7 +19,7 @@ class App extends React.Component {
 
         <FeaturedSection />
         <Campaign />
-        <RealatorsSection />
+        <RealtorsSection />
       </React.Fragment>
     );
   }

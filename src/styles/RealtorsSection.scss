@@ -1,0 +1,48 @@
+@import "variables";
+.realtors__section {
+  margin-top: 5rem;
+  padding-left: 15rem;
+  padding-top: 15rem;
+  background-color: $primary;
+  background-image: url("../images/hero.jpg");
+  background-blend-mode: multiply;
+  color: white;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.realtor__card__top {
+  height: 50%;
+}
+.realtor__card__bottom {
+  font-size: 1.5rem;
+  text-align: left;
+  height: 50%;
+  padding: 0.5rem 2rem;
+  width: 80%;
+
+  p {
+  }
+}
+.realtor__card {
+  margin-bottom: 2rem;
+  width: 95%;
+  height: 25rem;
+}
+
+.realtor__card__left {
+  float: left;
+  width: 20%;
+  height: 100%;
+
+  img {
+    object-fit: cover;
+    width: 100px;
+    border-radius: 50%;
+    height: 100px;
+  }
+}
+
+.realtor__card__right {
+  width: 80%;
+}

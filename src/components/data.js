@@ -4,6 +4,12 @@ import img2 from "../images/house3.jpg";
 import img3 from "../images/house4.jpg";
 import img4 from "../images/house5.jpg";
 import img5 from "../images/house6.jpg";
+
+import realtor1 from "../images/realtor-1.jpeg";
+import realtor2 from "../images/realtor-2.jpeg";
+import realtor3 from "../images/realtor-3.jpeg";
+import realtor4 from "../images/realtor-4.jpg";
+
 export const homes = {
   0: {
     img: img0,
@@ -82,5 +88,32 @@ export const homes = {
     address: "167 Packard ST.",
     city: "Hollywood, CA 98724",
     price: "245,000"
+  }
+};
+
+export const realtors = {
+  0: {
+    img: realtor1,
+    name: "James Connor",
+    sells: 449,
+    number: "419-444-5555"
+  },
+  1: {
+    img: realtor2,
+    name: "Jamie Blaze",
+    sells: 134,
+    number: "479-119-5555"
+  },
+  2: {
+    img: realtor3,
+    name: "Brandy Jones",
+    sells: 400,
+    number: "983-444-5532"
+  },
+  3: {
+    img: realtor4,
+    name: "Anthony Burgell",
+    sells: 345,
+    number: "419-444-5555"
   }
 };
