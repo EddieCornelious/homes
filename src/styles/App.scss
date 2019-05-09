@@ -10,7 +10,9 @@
 html {
   font-size: 10px;
 }
-
+img {
+  object-fit: cover;
+}
 body {
   background-color: white;
   font-family: "Spectral";

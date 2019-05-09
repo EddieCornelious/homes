@@ -1,13 +1,17 @@
 @import "variables";
 
 .owl-carousel .item {
-  background: purple;
   height: 30rem;
+  max-height: 30rem;
   width: 100%;
   position: relative;
 
   h4 {
     display: inline-block;
+  }
+  img {
+    object-fit: cover;
+    height: 100%;
   }
 
   &:hover .slide__item__info {
