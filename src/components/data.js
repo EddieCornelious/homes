@@ -10,6 +10,12 @@ import realtor2 from "../images/realtor-2.jpeg";
 import realtor3 from "../images/realtor-3.jpeg";
 import realtor4 from "../images/realtor-4.jpg";
 
+import city1 from "../images/city-1.jpg";
+import city2 from "../images/city-2.jpg";
+import city3 from "../images/city-3.jpg";
+import city4 from "../images/city-4.jpg";
+import city5 from "../images/city-5.jpg";
+
 export const homes = {
   0: {
     img: img0,
@@ -116,4 +122,12 @@ export const realtors = {
     sells: 345,
     number: "419-444-5555"
   }
+};
+
+export const cities = {
+  0: { img: city1, name: "Amsterdam" },
+  1: { img: city2, name: "Canada" },
+  2: { img: city3, name: "Maine" },
+  3: { img: city4, name: "Egypt" },
+  4: { img: city5, name: "Colorado" }
 };

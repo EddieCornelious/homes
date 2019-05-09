@@ -4,6 +4,9 @@ import Nav from "./Nav.js";
 import FeaturedSection from "./FeaturedSection.js";
 import Campaign from "./Campaign.js";
 import RealtorsSection from "./RealtorsSection.js";
+import Slider from "./Slider.js";
+import LuxurySection from "./LuxurySection.js";
+
 class App extends React.Component {
   render() {
     return (
@@ -20,6 +23,11 @@ class App extends React.Component {
         <FeaturedSection />
         <Campaign />
         <RealtorsSection />
+        <Slider />
+        <div className="slider__bottom">
+          <a href="#">International Properties&rarr;</a>
+        </div>
+        <LuxurySection />
       </React.Fragment>
     );
   }
