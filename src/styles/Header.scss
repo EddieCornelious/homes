@@ -31,30 +31,22 @@
 
 ._nav {
   z-index: 200;
-  background-color: $secondary;
-  padding: 2rem 0;
+  background-color: rgba(0, 0, 0, 1);
+  padding: 5rem 0;
   position: fixed;
   width: 100%;
   top: 0;
   overflow: hidden;
-
-  ul .items__wrap {
-    display: flex;
-    justify-content: space-around;
-    width: 50%;
-    float: left;
+  display: flex;
+  font-size: 2rem;
+  justify-content: space-around;
+  color: white;
+  p,
+  .logo {
+    font-weight: 700;
   }
 
-  ul div li {
-    display: inline-block;
-    font-size: 2rem;
-
-    ul div li a {
-      color: $primary;
-    }
-  }
-
-  ul .logo__wrap {
-    color: $primary;
+  .logo {
+    font-size: 4rem;
   }
 }

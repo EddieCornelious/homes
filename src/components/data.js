@@ -136,7 +136,23 @@ export const cities = {
   3: { img: city4, name: "Egypt" },
   4: { img: city5, name: "Colorado" }
 };
-
+export const luxuryTextData = [
+  "On the surface our story is deceptively simple, but exactly how we give it life is highly sophisticated. Collaborating with our" +
+    "extraordinary developer clientele, we create desire and demand for" +
+    "luxury real estate in the great financial, social, cultural and" +
+    "recreational capitals of the world. Like the world class architects" +
+    "and designers they select, this new wave of developers is dedicated to" +
+    "crafting the most geometrically inspiring and emotionally moving" +
+    "structures imaginable. Our role is to market those residences to" +
+    "discerning buyers and to help guide developer, architect and buyer" +
+    "alike in an evolving world of luxury living.",
+  "On the surface our story is deceptively simple, but exactly how we give it life is highly sophisticated. Collaborating with our" +
+    "extraordinary developer clientele, we create desire and demand for" +
+    "luxury real estate in the great financial, social, cultural and" +
+    "recreational capitals of the world. Like the world class architects" +
+    "and designers they select, this new wave of developers is dedicated to" +
+    "crafting the most geometrically inspiring and emotionally moving"
+];
 export const luxuryProperties = {
   0: {
     img: luxury1,

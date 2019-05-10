@@ -1,25 +1,14 @@
 import "../styles/LuxurySection.scss";
 import React from "react";
-import { luxuryProperties } from "./data.js";
+import { luxuryProperties, luxuryTextData } from "./data.js";
 
-const LuxuryText = () => {
+const LuxuryText = props => {
   return (
     <section className="luxury__text">
       <div className="container">
-        <h3>THE EVOLVING WORLD OF LUXURY LIVING</h3>
+        <h3>{props.title}</h3>
         <hr />
-        <p>
-          On the surface our story is deceptively simple, but exactly how we
-          give it life is highly sophisticated. Collaborating with our
-          extraordinary developer clientele, we create desire and demand for
-          luxury real estate in the great financial, social, cultural and
-          recreational capitals of the world. Like the world class architects
-          and designers they select, this new wave of developers is dedicated to
-          crafting the most geometrically inspiring and emotionally moving
-          structures imaginable. Our role is to market those residences to
-          discerning buyers and to help guide developer, architect and buyer
-          alike in an evolving world of luxury living.
-        </p>
+        <p>{props.text}</p>
       </div>
     </section>
   );
@@ -32,7 +21,12 @@ const LuxuryOption = props => {
   return (
     <div className="luxury__option">
       <div
-        style={{ backgroundImage: "url(" + data.img + ")" }}
+        style={{
+          backgroundImage:
+            "linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(" +
+            data.img +
+            ")"
+        }}
         className="luxury__bg"
       >
         &nbsp;
@@ -78,9 +72,15 @@ const LuxuryOptions = () => {
 const LuxurySection = () => {
   return (
     <React.Fragment>
-      <LuxuryText />
+      <LuxuryText
+        title="THE EVOLVING WORLD OF LUXURY LIVING"
+        text={luxuryTextData[0]}
+      />
       <LuxuryOptions />
-      <div>loso</div>
+      <LuxuryText
+        title="#1 RATED REAL-ESTATE AGENCY 10 YEARS IN A ROW"
+        text={luxuryTextData[1]}
+      />
     </React.Fragment>
   );
 };

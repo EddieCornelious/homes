@@ -6,6 +6,7 @@ import Campaign from "./Campaign.js";
 import RealtorsSection from "./RealtorsSection.js";
 import Slider from "./Slider.js";
 import LuxurySection from "./LuxurySection.js";
+import Logo from "./Logo.js";
 
 class App extends React.Component {
   render() {
@@ -28,6 +29,12 @@ class App extends React.Component {
           <a href="#">International Properties&rarr;</a>
         </div>
         <LuxurySection />
+        <footer>
+          <h3>THE WORLD BEST REALESTATE</h3>
+          <Logo />
+          <p>#106, 1008 BEACH AVENUE, Columbus OH, V6E 1T7</p>
+          <p>©2019 Company Name CORP. ALL RIGHTS RESERVED.</p>
+        </footer>
       </React.Fragment>
     );
   }

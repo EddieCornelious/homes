@@ -1,28 +1,31 @@
 import "../styles/Header.scss";
 import React from "react";
+import Logo from "./Logo.js";
 
 const Nav = () => {
   return (
     <div className="_nav">
-      <ul>
-        <div className="items__wrap">
-          <li>
-            <a>Home</a>
-          </li>
-          <li>
-            <a>Home</a>
-          </li>
-          <li>
-            <a>Home</a>
-          </li>
-          <li>
-            <a>Home</a>
-          </li>
-        </div>
-        <div className="logo__wrap">
-          <h1 className="nav__logo">LOGO</h1>
-        </div>
-      </ul>
+      <p>
+        <a> Home</a>
+      </p>
+      <p>
+        <a> Home</a>
+      </p>
+      <p>
+        <a> Home</a>
+      </p>
+      <p>
+        <Logo />
+      </p>
+      <p>
+        <a> Home</a>
+      </p>
+      <p>
+        <a> Home</a>
+      </p>{" "}
+      <p>
+        <a>Home</a>
+      </p>
     </div>
   );
 };
