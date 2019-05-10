@@ -1,0 +1,138 @@
+.luxury__text {
+  padding: 15rem 0;
+  text-align: center;
+
+  .container {
+    p {
+      font-size: 3rem;
+      font-weight: 100;
+      display: block;
+    }
+
+    h3 {
+      font-size: 5rem;
+    }
+
+    hr {
+      width: 10rem;
+      background: black;
+      height: 1px;
+      display: block;
+      margin: 5rem auto;
+    }
+  }
+}
+
+.luxury__options .container-fluid {
+  padding: 0;
+}
+.luxury__content {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  backface-visibility: hidden;
+
+  a {
+    border: 1px solid rgba(0, 0, 0, 0);
+    display: inline-block;
+    padding: 2rem 5rem;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: bolder;
+  }
+  h3 {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    letter-spacing: 6px;
+  }
+}
+
+.luxury__option:hover .luxury__bg {
+  transform: scale(1.2);
+}
+
+.luxury__option:hover .luxury__btn {
+  border-color: white;
+}
+
+.luxury__option:hover .first__word {
+  animation-name: letterFade;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+.luxury__option:hover .second__word {
+  animation-name: letterFade;
+  animation-duration: 6s;
+  animation-fill-mode: forwards;
+}
+
+.luxury__option:hover .luxury__bg:after {
+  visibility: visible;
+  background: rgba(22, 33, 44, 0.7);
+}
+
+.luxury__bg {
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: transform 9s ease;
+
+  &:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0);
+    left: 0;
+    right: 0;
+    top: 0;
+    visibility: hidden;
+    transition: background 1s ease-out;
+  }
+}
+
+.luxury__option {
+  height: 50rem;
+  position: relative;
+  color: white;
+  overflow: hidden;
+}
+
+.luxury__overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.luxury__content {
+  position: absolute;
+}
+
+@keyframes letterFade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.first__word,
+.second__word {
+  display: inline-block;
+}
+
+.first__word {
+  margin-right: 2rem;
+}

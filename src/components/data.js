@@ -16,6 +16,11 @@ import city3 from "../images/city-3.jpg";
 import city4 from "../images/city-4.jpg";
 import city5 from "../images/city-5.jpg";
 
+import luxury1 from "../images/luxury-1.jpg";
+import luxury2 from "../images/luxury-2.jpg";
+import luxury3 from "../images/luxury-3.jpg";
+import luxury4 from "../images/luxury-4.jpg";
+
 export const homes = {
   0: {
     img: img0,
@@ -130,4 +135,23 @@ export const cities = {
   2: { img: city3, name: "Maine" },
   3: { img: city4, name: "Egypt" },
   4: { img: city5, name: "Colorado" }
+};
+
+export const luxuryProperties = {
+  0: {
+    img: luxury1,
+    text: "Visit Cambridge"
+  },
+  1: {
+    img: luxury2,
+    text: "Marine"
+  },
+  2: {
+    img: luxury3,
+    text: "Lavish Loft"
+  },
+  3: {
+    img: luxury4,
+    text: "Canal Beach"
+  }
 };

@@ -16,14 +16,15 @@ img {
 body {
   background-color: white;
   font-family: "Spectral";
+  overflow-x: hidden;
 }
 
-.row.no-gutters {
+.no-gutters {
   margin-right: 0;
   margin-left: 0;
 }
-.row.no-gutters > [class^="col-"],
-.row.no-gutters > [class*=" col-"] {
+.no-gutters > [class^="col-"],
+.no-gutters > [class*=" col-"] {
   padding-right: 0;
   padding-left: 0;
 }
@@ -36,4 +37,5 @@ a:focus,
 a:active {
   color: inherit;
   text-decoration: none;
+  cursor: pointer;
 }
