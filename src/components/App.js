@@ -1,3 +1,9 @@
+import "bootstrap/dist/css/bootstrap.css";
+import "owl.carousel/dist/assets/owl.carousel.css";
+import "owl.carousel/dist/assets/owl.theme.default.css";
+import "font-awesome/css/font-awesome.css";
+import "owl.carousel";
+
 import "../styles/App.scss";
 import React from "react";
 import Nav from "./Nav.js";
