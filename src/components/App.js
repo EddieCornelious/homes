@@ -13,6 +13,7 @@ import RealtorsSection from "./RealtorsSection.js";
 import Slider from "./Slider.js";
 import LuxurySection from "./LuxurySection.js";
 import Logo from "./Logo.js";
+import vid from "../images/traffic.mp4";
 
 class App extends React.Component {
   render() {
@@ -36,10 +37,16 @@ class App extends React.Component {
         </div>
         <LuxurySection />
         <footer>
-          <h3>THE WORLD BEST REALESTATE</h3>
-          <Logo />
-          <p>#106, 1008 BEACH AVENUE, Columbus OH, V6E 1T7</p>
-          <p>©2019 Company Name CORP. ALL RIGHTS RESERVED.</p>
+          <div className="overlay">&nbsp;</div>
+          <video autoPlay={true} loop={true} muted={true} playsInline={true}>
+            <source type="video/mp4" src={vid} />
+          </video>
+          <div className="footer__content">
+            <h3>THE WORLD BEST REALESTATE</h3>
+            <Logo />
+            <p>#106, 1008 BEACH AVENUE, Columbus OH, V6E 1T7</p>
+            <p>©2019 Company Name CORP. ALL RIGHTS RESERVED.</p>
+          </div>
         </footer>
       </React.Fragment>
     );

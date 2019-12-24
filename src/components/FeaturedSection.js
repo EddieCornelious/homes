@@ -17,33 +17,33 @@ const PropertyCard = props => {
         <div className="card__bottom__location">
           <h2>{data.address}</h2>
           <p>
-            <i class="fas fa-map-marker-alt" />
+            <i className="fas fa-map-marker-alt" />
             {data.city}
           </p>
         </div>
 
         <div className="card__bottom__row">
           <p>
-            <i class="fa fa-th-large" /> {data.size + "sq ft."}
+            <i className="fa fa-th-large" /> {data.size + "sq ft."}
           </p>
           <p>
-            <i class="fa fa-car" /> {data.garage + " garages"}
+            <i className="fa fa-car" /> {data.garage + " garages"}
           </p>
 
           <p>
-            <i class="fa fa-bed" /> {data.bed + " bedrooms"}
+            <i className="fa fa-bed" /> {data.bed + " bedrooms"}
           </p>
           <p>
-            <i class="fa fa-shower" /> {data.bath + " bathrooms"}
+            <i className="fa fa-shower" /> {data.bath + " bathrooms"}
           </p>
         </div>
 
         <div className="card__bottom__row">
           <p>
-            <i class="fa fa-user" /> {data.realator}
+            <i className="fa fa-user" /> {data.realator}
           </p>
           <p>
-            <i class="fa fa-clock" /> {data.posted + " days ago"}
+            <i className="fa fa-clock" /> {data.posted + " days ago"}
           </p>
         </div>
         <div className="bottom__button">{"$" + data.price}</div>

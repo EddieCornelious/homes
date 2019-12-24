@@ -7,6 +7,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 html {
   font-size: 10px;
 }
@@ -41,10 +42,39 @@ a:active {
 }
 
 footer {
-  padding: 15rem 0;
-  background: black;
+  background: rgba(0, 0, 0, 1);
   color: white;
   text-align: center;
+  position: relative;
+  width: 100%;
+  max-height: 612px;
+  overflow: hidden;
+
+  .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 98;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+  }
+}
+
+video {
+  z-index: 97;
+  position: relative;
+  width: 100vw;
+}
+
+.footer__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99;
 }
 
 footer .logo {

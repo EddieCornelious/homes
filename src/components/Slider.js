@@ -5,7 +5,7 @@ import { cities } from "./data.js";
 const SlideItem = props => {
   const data = cities[props.id];
   return (
-    <div class="item">
+    <div className="item">
       <img src={data.img} />
       <div className="slide__item__info">
         <a href="#">{data.name}&rarr;</a>
@@ -16,7 +16,7 @@ const SlideItem = props => {
 
 const Slider = () => {
   return (
-    <div class="owl-carousel owl-theme">
+    <div className="owl-carousel owl-theme">
       <SlideItem id="0" />
       <SlideItem id="1" />
       <SlideItem id="2" />

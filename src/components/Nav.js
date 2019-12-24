@@ -6,25 +6,25 @@ const Nav = () => {
   return (
     <div className="_nav">
       <p>
-        <a> Home</a>
+        <a>Home</a>
       </p>
       <p>
-        <a> Home</a>
+        <a>About</a>
       </p>
       <p>
-        <a> Home</a>
+        <a>Blog</a>
       </p>
-      <p>
+      <i>
         <Logo />
+      </i>
+      <p>
+        <a>Realtors</a>
       </p>
       <p>
-        <a> Home</a>
-      </p>
-      <p>
-        <a> Home</a>
+        <a>Contact</a>
       </p>{" "}
       <p>
-        <a>Home</a>
+        <a>Properties</a>
       </p>
     </div>
   );
