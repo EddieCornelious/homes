@@ -4,7 +4,7 @@ import React from "react";
 const Campaign = () => {
   return (
     <section className="campaign">
-      <div className="container-fluid">
+      <div style={{ padding: 0 }} className="container-fluid">
         <div className="row no-gutters">
           <div className="col-md-6">
             <div className="campaign__left">

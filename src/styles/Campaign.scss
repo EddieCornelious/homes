@@ -6,8 +6,8 @@
 
 .campaign__right {
   background-image: url("../images/alexandra-gorn-485551-unsplash.jpg");
-  height: 60rem;
   width: 100%;
+  min-height: 60rem;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -16,8 +16,7 @@
 .campaign__left {
   color: $primary;
   background-color: #f6f3f3;
-  padding: 15rem;
-  height: 60rem;
+  padding: 13rem 13rem 0 13rem;
 }
 
 .campaign__left__content {
