@@ -57,22 +57,22 @@ const FeaturedSection = () => {
       <div className="container-fluid">
         <h1>Featured Section</h1>
         <div className="row">
-          <div className="col-md-4">
+          <div className="col-sm-6 col-md-4">
             <PropertyCard id="0" />
           </div>
-          <div className="col-md-4">
+          <div className="col-sm-6 col-md-4">
             <PropertyCard id="1" />
           </div>
-          <div className="col-md-4">
+          <div className="col-sm-6 col-md-4">
             <PropertyCard id="2" />
           </div>
-          <div className="col-md-4">
+          <div className="col-sm-6 col-md-4">
             <PropertyCard id="3" />
           </div>
-          <div className="col-md-4">
+          <div className="col-sm-6 col-md-4">
             <PropertyCard id="4" />
           </div>
-          <div className="col-md-4">
+          <div className="col-sm-6 col-md-4">
             <PropertyCard id="5" />
           </div>
         </div>

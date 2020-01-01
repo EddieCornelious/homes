@@ -13,12 +13,16 @@ import RealtorsSection from "./RealtorsSection.js";
 import Slider from "./Slider.js";
 import LuxurySection from "./LuxurySection.js";
 import Logo from "./Logo.js";
+
+import PropertyDetails from "./PropertyDetails.js";
+
 import vid from "../images/traffic.mp4";
 
 class App extends React.Component {
   render() {
     return (
       <React.Fragment>
+        <PropertyDetails />
         <Nav />
         <section className="header">
           <div className="header__content">

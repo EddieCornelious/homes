@@ -16,7 +16,7 @@ const SlideItem = props => {
 
 const Slider = () => {
   return (
-    <div className="owl-carousel owl-theme">
+    <div className="int__carousel owl-carousel owl-theme">
       <SlideItem id="0" />
       <SlideItem id="1" />
       <SlideItem id="2" />
