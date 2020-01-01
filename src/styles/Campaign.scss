@@ -7,7 +7,7 @@
 .campaign__right {
   background-image: url("../images/alexandra-gorn-485551-unsplash.jpg");
   width: 100%;
-  min-height: 60rem;
+  min-height: 64rem;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -16,15 +16,21 @@
 .campaign__left {
   color: $primary;
   background-color: #f6f3f3;
-  padding: 13rem 13rem 0 13rem;
+  display: flex;
+  justify-content: center;
+  padding-top: calc(32.4rem / 2);
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .campaign__left__content {
-  margin: 0 auto;
-
+  text-align: center;
   h3 {
     font-size: 4rem;
+    margin: 0;
+    margin-bottom: 1rem;
   }
+
   ul li {
     list-style: none;
     line-height: 1.9;
@@ -36,5 +42,6 @@
   p {
     font-size: 7rem;
     font-family: Sacramento;
+    margin: 0;
   }
 }
