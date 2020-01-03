@@ -11,7 +11,12 @@ const PropertyCard = props => {
         <a className="availability" href="#">
           {data.status === 1 ? "for sale" : "for rent"}
         </a>
-        <a className="property__info">View More &rarr;</a>
+        <a
+          onClick={() => props.toggleDetail(props.id)}
+          className="property__info"
+        >
+          View More &rarr;
+        </a>
       </div>
       <div className="property__card__bottom">
         <div className="card__bottom__location">
@@ -51,29 +56,29 @@ const PropertyCard = props => {
     </div>
   );
 };
-const FeaturedSection = () => {
+const FeaturedSection = props => {
   return (
     <section className="featured__section">
       <div className="container-fluid">
         <h1>Featured Section</h1>
         <div className="row">
           <div className="col-sm-6 col-md-4">
-            <PropertyCard id="0" />
+            <PropertyCard toggleDetail={props.toggleDetail} id={0} />
           </div>
           <div className="col-sm-6 col-md-4">
-            <PropertyCard id="1" />
+            <PropertyCard toggleDetail={props.toggleDetail} id={1} />
           </div>
           <div className="col-sm-6 col-md-4">
-            <PropertyCard id="2" />
+            <PropertyCard toggleDetail={props.toggleDetail} id={2} />
           </div>
           <div className="col-sm-6 col-md-4">
-            <PropertyCard id="3" />
+            <PropertyCard toggleDetail={props.toggleDetail} id={3} />
           </div>
           <div className="col-sm-6 col-md-4">
-            <PropertyCard id="4" />
+            <PropertyCard toggleDetail={props.toggleDetail} id={4} />
           </div>
           <div className="col-sm-6 col-md-4">
-            <PropertyCard id="5" />
+            <PropertyCard toggleDetail={props.toggleDetail} id={5} />
           </div>
         </div>
       </div>

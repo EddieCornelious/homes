@@ -19,10 +19,29 @@ import PropertyDetails from "./PropertyDetails.js";
 import vid from "../images/traffic.mp4";
 
 class App extends React.Component {
+  state = {
+    active: null
+  };
+
+  toggleDetail = homeId => {
+    this.setState({
+      active: homeId
+    });
+  };
+
+  closeDetail = () => {
+    this.setState({
+      active: null
+    });
+  };
+
   render() {
     return (
       <React.Fragment>
-        <PropertyDetails />
+        <PropertyDetails
+          closeDetail={this.closeDetail}
+          active={this.state.active}
+        />
         <Nav />
         <section className="header">
           <div className="header__content">
@@ -32,7 +51,7 @@ class App extends React.Component {
           </div>
         </section>
 
-        <FeaturedSection />
+        <FeaturedSection toggleDetail={this.toggleDetail} />
         <Campaign />
         <RealtorsSection />
         <Slider />
