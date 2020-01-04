@@ -16,8 +16,8 @@
     top: 50%;
     transform: translateY(-50%);
     .item {
-      width: 600px;
-      height: 600px;
+      width: 60rem;
+      height: 60rem;
       margin: 0 auto;
 
       img {
@@ -30,8 +30,8 @@
   .exit__detail {
     position: absolute;
     right: 5%;
-    color: red;
-    font-size: 3rem;
+    color: white;
+    font-size: 5rem;
     top: 5%;
     z-index: 9999;
   }

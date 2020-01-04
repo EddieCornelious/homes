@@ -21,7 +21,6 @@ import luxury2 from "../images/luxury-2.jpg";
 import luxury3 from "../images/luxury-3.jpg";
 import luxury4 from "../images/luxury-4.jpg";
 
-import h1a from "../images/interior/house1a.jpg";
 import h1b from "../images/interior/house1b.jpg";
 import h1c from "../images/interior/house1c.jpg";
 import h1d from "../images/interior/house1d.jpg";
@@ -30,11 +29,13 @@ import h2a from "../images/interior/house2a.jpg";
 import h2b from "../images/interior/house2b.jpg";
 import h2c from "../images/interior/house2c.jpg";
 import h2d from "../images/interior/house2d.jpg";
+import h2e from "../images/interior/house2e.jpg";
 
 import h3a from "../images/interior/house3a.jpg";
 import h3b from "../images/interior/house3b.jpg";
 import h3c from "../images/interior/house3c.jpg";
 import h3d from "../images/interior/house3d.jpg";
+import h3e from "../images/interior/house3e.jpg";
 
 import h4a from "../images/interior/house4a.jpg";
 import h4b from "../images/interior/house4b.jpg";
@@ -50,6 +51,7 @@ import h6a from "../images/interior/house6a.jpg";
 import h6b from "../images/interior/house6b.jpg";
 import h6c from "../images/interior/house6c.jpg";
 import h6d from "../images/interior/house6d.jpg";
+import h6e from "../images/interior/house6e.jpg";
 
 export const homes = {
   0: {
@@ -65,7 +67,7 @@ export const homes = {
     city: "Beverly Hills, CA 90210",
     price: "210,000",
     id: 0,
-    interior: [h1a, h1b, h1c, h1d]
+    interior: [h1b, h1c, h1d, h6a]
   },
   1: {
     img: img1,
@@ -140,7 +142,7 @@ export const homes = {
     city: "Hollywood, CA 98724",
     price: "245,000",
     id: 5,
-    interior: [h6a, h6b, h6c, h6d]
+    interior: [h6a, h6b, h6c, h6d, h6e]
   }
 };
 

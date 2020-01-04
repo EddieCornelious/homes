@@ -1,6 +1,7 @@
 import "../styles/PropertyDetails.scss";
 import React from "react";
 import { homes } from "./data.js";
+const $ = window.$;
 
 const SlideItem = ({ imgUrl }) => {
   return (
@@ -15,8 +16,16 @@ class PropertyDetails extends React.Component {
     super(props);
   }
 
+  renderDetails(list, homeId) {
+    const res = [];
+    for (let i = 0; i < list.length; i++) {
+      res.push(<SlideItem imgUrl={list[i]} />);
+    }
+    return res;
+  }
+
   render() {
-    console.log(homes[this.props.active]);
+    const index = this.props.active === null ? 1 : this.props.active;
     return (
       <div
         style={{ display: this.props.active === null ? "none" : "block" }}
@@ -26,10 +35,7 @@ class PropertyDetails extends React.Component {
           X
         </div>
         <div className="detail__carousel owl-carousel owl-theme">
-          <SlideItem imgUrl={homes[this.props.active || 1].interior[0]} />
-          <SlideItem imgUrl={homes[this.props.active || 1].interior[1]} />
-          <SlideItem imgUrl={homes[this.props.active || 1].interior[2]} />
-          <SlideItem imgUrl={homes[this.props.active || 1].interior[3]} />
+          {this.renderDetails(homes[index].interior, index)}
         </div>
       </div>
     );
