@@ -29,7 +29,7 @@ const RealtorCard = props => {
 const RealtorsSection = () => {
   return (
     <section className="realtors__section">
-      <div className="container-fluid">
+      <div className="container">
         <h1>Our Realtors</h1>
         <div className="row">
           <div className="col-md-6">

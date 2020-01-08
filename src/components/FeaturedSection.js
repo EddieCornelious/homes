@@ -59,7 +59,7 @@ const PropertyCard = props => {
 const FeaturedSection = props => {
   return (
     <section className="featured__section">
-      <div className="container-fluid">
+      <div className="container">
         <h1>Featured Section</h1>
         <div className="row">
           <div className="col-sm-6 col-md-4">
