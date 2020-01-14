@@ -36,3 +36,28 @@
     z-index: 9999;
   }
 }
+
+.owl-prev,
+.owl-next {
+  position: absolute;
+  height: 100px;
+  color: inherit;
+  background: none;
+  border: none;
+  z-index: 100;
+
+  i {
+    font-size: 5rem;
+    color: #cecece;
+  }
+}
+
+.owl-prev {
+  left: 10%;
+  top: 50%;
+}
+
+.owl-next {
+  right: 10%;
+  top: 50%;
+}
