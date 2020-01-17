@@ -3,8 +3,8 @@
   margin-top: 12rem;
   padding: 12rem 0 12rem 0;
   background-color: $primary;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(53, 20, 49, 0.8))),
-    url("../images/hero.jpg");
+  background-image: url("../images/hero.jpg");
+  background-blend-mode: multiply;
   color: white;
   background-repeat: no-repeat;
   background-size: cover;
