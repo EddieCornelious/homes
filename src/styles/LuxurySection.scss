@@ -1,5 +1,5 @@
 .luxury__text {
-  padding: 15rem 0;
+  padding: 10rem 0 11rem 0;
   text-align: center;
 
   .container {
@@ -30,9 +30,12 @@
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   text-align: center;
-  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 
   a {
     border: 1px solid rgba(0, 0, 0, 0);
@@ -50,7 +53,9 @@
 }
 
 .luxury__option:hover .luxury__bg {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .luxury__option:hover .luxury__btn {
@@ -58,15 +63,21 @@
 }
 
 .luxury__option:hover .first__word {
-  animation-name: letterFade;
-  animation-duration: 3s;
-  animation-fill-mode: forwards;
+  -webkit-animation-name: letterFade;
+          animation-name: letterFade;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .luxury__option:hover .second__word {
-  animation-name: letterFade;
-  animation-duration: 6s;
-  animation-fill-mode: forwards;
+  -webkit-animation-name: letterFade;
+          animation-name: letterFade;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .luxury__option:hover .luxury__bg:after {
@@ -81,7 +92,11 @@
   position: absolute;
   width: 100%;
   height: 100%;
+  -webkit-transition: -webkit-transform 9s ease;
+  transition: -webkit-transform 9s ease;
+  -o-transition: transform 9s ease;
   transition: transform 9s ease;
+  transition: transform 9s ease, -webkit-transform 9s ease;
 
   &:after {
     content: "";
@@ -93,6 +108,8 @@
     right: 0;
     top: 0;
     visibility: hidden;
+    -webkit-transition: background 1s ease-out;
+    -o-transition: background 1s ease-out;
     transition: background 1s ease-out;
   }
 }
@@ -117,6 +134,15 @@
 
 .luxury__content {
   position: absolute;
+}
+
+@-webkit-keyframes letterFade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes letterFade {

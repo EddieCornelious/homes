@@ -11,11 +11,11 @@ const Campaign = () => {
               <div className="campaign__left__content">
                 <h3>Newly-launched campaign in Whitby agencies</h3>
                 <ul>
-                  <li>Ut aliquam purus sit amet luctus</li>
-                  <li>Ut aliquam purus sit amet luctus</li>
-                  <li>Ut aliquam purus sit amet luctus</li>
-                  <li>Ut aliquam purus sit amet luctus</li>
-                  <li>Ut aliquam purus sit amet luctus</li>
+                  <li>Improved turn-around time for new purchases</li>
+                  <li>24 hour customer-service reps</li>
+                  <li>Exclusive property deals with first signup</li>
+                  <li>Real-time access to property listing</li>
+                  <li>Overall improved user experience</li>
                 </ul>
                 <p>Signature</p>
               </div>

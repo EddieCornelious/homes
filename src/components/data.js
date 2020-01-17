@@ -151,25 +151,33 @@ export const realtors = {
     img: realtor1,
     name: "James Connor",
     sells: 449,
-    number: "419-444-5555"
+    number: "419-444-5555",
+    info:
+      "With over 15 years of experience in the real-estate industry, James is on of our most experienced realtors and will surely be able to find the home you need."
   },
   1: {
     img: realtor2,
     name: "Jamie Blaze",
     sells: 134,
-    number: "479-119-5555"
+    number: "479-119-5555",
+    info:
+      "Jamie has the highest success rate of any of our realtors. If you want to find your house and find it quickly, Jamie is the realtor for you."
   },
   2: {
     img: realtor3,
     name: "Brandy Jones",
     sells: 400,
-    number: "983-444-5532"
+    number: "983-444-5532",
+    info:
+      "Brandy has a real knack for being able to close the most reasonable deals our company has ever done. Prefect realtor for those on a budget."
   },
   3: {
     img: realtor4,
     name: "Anthony Burgell",
     sells: 345,
-    number: "419-444-5555"
+    number: "419-444-5555",
+    info:
+      "It's no secret that Anthony is our most seasoned realtor with over 25 years of experience! Anthony will surely get you in the home you need in no time."
   }
 };
 

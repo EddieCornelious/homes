@@ -1,4 +1,6 @@
 @import "variables";
+@import "responsive";
+
 * {
   margin: 0;
   padding: 0;
@@ -16,9 +18,23 @@ body {
 
 html {
   font-size: 10px;
+
+  @include respond(desktop) {
+    font-size: 9px;
+  }
+  @include respond(tab-land) {
+    font-size: 8px;
+  }
+  @include respond(tab-port) {
+    font-size: 7px;
+  }
+  @include respond(phone) {
+    font-size: 6px;
+  }
 }
 img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 body {
   font-family: "Spectral";
@@ -79,7 +95,9 @@ video {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   z-index: 99;
 }
 

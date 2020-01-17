@@ -9,7 +9,7 @@ const PropertyCard = props => {
       <div className="property__card__top">
         <img alt="property image" src={data.img} />
         <a className="availability" href="#">
-          {data.status === 1 ? "for sale" : "for rent"}
+          {data.status === 1 ? "for sale" : "for sale"}
         </a>
         <a
           onClick={() => props.toggleDetail(props.id)}

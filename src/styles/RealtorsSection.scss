@@ -1,7 +1,7 @@
 @import "variables";
 .realtors__section {
-  margin-top: 15rem;
-  padding: 15rem 0;
+  margin-top: 12rem;
+  padding: 12rem 0 12rem 0;
   background-color: $primary;
   background-image: url("../images/hero.jpg");
   background-blend-mode: multiply;
@@ -18,8 +18,15 @@
 
 .realtor__card__top {
   height: 50%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 .realtor__card__bottom {
   font-size: 1.5rem;
@@ -36,10 +43,11 @@
   height: 100%;
 
   img {
-    object-fit: cover;
-    width: 100px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 10rem;
     border-radius: 50%;
-    height: 100px;
+    height: 10rem;
   }
 }
 

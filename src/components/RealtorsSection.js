@@ -18,11 +18,7 @@ const RealtorCard = props => {
         </div>
       </div>
 
-      <div className="realtor__card__bottom">
-        Lectus proin nibh nisl condimentum id venenatis a condimentum vitae.
-        Scelerisque viverra mauris in aliquam sem fringilla. Ut eu sem integer
-        vitae justo eget. Habitasse platea dictumst vestibulum rhoncus.
-      </div>
+      <div className="realtor__card__bottom">{data.info}</div>
     </div>
   );
 };
