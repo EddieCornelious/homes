@@ -10,8 +10,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-
-
 html,
 body {
   height: 100%;
@@ -21,9 +19,9 @@ body {
 html {
   font-size: 10px;
 
-  @include respond(desktop) {
+  /*@include respond(desktop) {
     font-size: 9px;
-  }
+  }*/
   @include respond(tab-land) {
     font-size: 8px;
   }
@@ -36,7 +34,7 @@ html {
 }
 img {
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 body {
   font-family: "Spectral";
@@ -98,8 +96,8 @@ video {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   z-index: 99;
 }
 

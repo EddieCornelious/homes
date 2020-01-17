@@ -51,8 +51,8 @@ const PropertyCard = props => {
             <i className="fa fa-clock" /> {data.posted + " days ago"}
           </p>
         </div>
-        <div className="bottom__button">{"$" + data.price}</div>
       </div>
+      <div className="bottom__button">{"$" + data.price}</div>
     </div>
   );
 };
