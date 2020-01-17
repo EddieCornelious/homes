@@ -2,7 +2,13 @@
 
 .header {
   height: 100vh;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(53, 20, 49, 0.8))),
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.8)),
+      to(rgba(53, 20, 49, 0.8))
+    ),
     url("../images/hero.jpg");
   background-position: top;
   background-repeat: no-repeat;
@@ -30,7 +36,7 @@
 ._nav {
   z-index: 200;
   background-color: rgba(0, 0, 0, 1);
-  padding: 5rem 0;
+  padding: 2.5rem 0;
   position: fixed;
   width: 100%;
   top: 0;
@@ -41,15 +47,17 @@
   display: flex;
   font-size: 2rem;
   -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
   color: white;
   p,
   .logo {
     font-weight: 700;
+    margin: 0;
   }
 
   .logo {
     font-size: 4rem;
+    margin-top: -3px;
   }
 }
