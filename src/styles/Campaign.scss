@@ -27,6 +27,10 @@
   padding-top: 12rem;
   padding-left: 2rem;
   padding-right: 2rem;
+
+  @media only screen and (max-width: 991px) {
+    padding-bottom: 12rem;
+  }
 }
 
 .campaign__left__content {

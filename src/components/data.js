@@ -142,7 +142,7 @@ export const homes = {
     city: "Hollywood, CA 98724",
     price: "245,000",
     id: 5,
-    interior: [h6a, h6b, h6c, h6d, h6e]
+    interior: [h6a, h6b, h6c, h6d]
   }
 };
 

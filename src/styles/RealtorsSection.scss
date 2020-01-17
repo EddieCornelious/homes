@@ -17,7 +17,7 @@
 }
 
 .realtor__card__top {
-  height: 50%;
+
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -31,12 +31,16 @@
 .realtor__card__bottom {
   font-size: 1.5rem;
   text-align: left;
-  height: 50%;
+
   padding: 1.5rem 0;
 }
 .realtor__card {
   height: 25rem;
   padding: 2rem;
+
+  @media only screen and (max-width: 768px) {
+    margin: 50px 0;
+  }
 }
 
 .realtor__card__left {

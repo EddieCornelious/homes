@@ -19,7 +19,7 @@ class PropertyDetails extends React.Component {
   renderDetails(list, homeId) {
     const res = [];
     for (let i = 0; i < list.length; i++) {
-      res.push(<SlideItem imgUrl={list[i]} />);
+      res.push(<SlideItem key={i} imgUrl={list[i]} />);
     }
     return res;
   }

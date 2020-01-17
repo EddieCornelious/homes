@@ -62,22 +62,22 @@ const FeaturedSection = props => {
       <div className="container">
         <h1>Featured Section</h1>
         <div className="row">
-          <div className="col-sm-6 col-md-4">
+          <div className="col-xs-12 col-sm-6 col-md-4">
             <PropertyCard toggleDetail={props.toggleDetail} id={0} />
           </div>
-          <div className="col-sm-6 col-md-4">
+          <div className="col-xs-12 col-sm-6 col-md-4">
             <PropertyCard toggleDetail={props.toggleDetail} id={1} />
           </div>
-          <div className="col-sm-6 col-md-4">
+          <div className="col-xs-12 col-sm-6 col-md-4">
             <PropertyCard toggleDetail={props.toggleDetail} id={2} />
           </div>
-          <div className="col-sm-6 col-md-4">
+          <div className="col-xs-12 col-sm-6 col-md-4">
             <PropertyCard toggleDetail={props.toggleDetail} id={3} />
           </div>
-          <div className="col-sm-6 col-md-4">
+          <div className="col-xs-12 col-sm-6 col-md-4">
             <PropertyCard toggleDetail={props.toggleDetail} id={4} />
           </div>
-          <div className="col-sm-6 col-md-4">
+          <div className="col-xs-12 col-sm-6 col-md-4">
             <PropertyCard toggleDetail={props.toggleDetail} id={5} />
           </div>
         </div>
