@@ -78,7 +78,7 @@ const LuxurySection = () => {
       />
       <LuxuryOptions />
       <LuxuryText
-        title="#1 RATED REAL-ESTATE AGENCY 10 YEARS IN A ROW"
+        title="#1 RATED LUXURY REAL-ESTATE AGENCY 5 YEARS IN A ROW"
         text={luxuryTextData[1]}
       />
     </React.Fragment>

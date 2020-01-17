@@ -183,10 +183,10 @@ export const realtors = {
 
 export const cities = {
   0: { img: city1, name: "Amsterdam" },
-  1: { img: city2, name: "Canada" },
-  2: { img: city3, name: "Maine" },
-  3: { img: city4, name: "Egypt" },
-  4: { img: city5, name: "Colorado" }
+  1: { img: city2, name: "Greenland" },
+  2: { img: city3, name: "London" },
+  3: { img: city4, name: "Dubai" },
+  4: { img: city5, name: "Italy" }
 };
 export const luxuryTextData = [
   "On the surface our story is deceptively simple, but exactly how we give it life is highly sophisticated. Collaborating with our" +
@@ -198,12 +198,12 @@ export const luxuryTextData = [
     "structures imaginable. Our role is to market those residences to" +
     "discerning buyers and to help guide developer, architect and buyer" +
     "alike in an evolving world of luxury living.",
-  "On the surface our story is deceptively simple, but exactly how we give it life is highly sophisticated. Collaborating with our" +
-    "extraordinary developer clientele, we create desire and demand for" +
-    "luxury real estate in the great financial, social, cultural and" +
-    "recreational capitals of the world. Like the world class architects" +
-    "and designers they select, this new wave of developers is dedicated to" +
-    "crafting the most geometrically inspiring and emotionally moving"
+  "At John and Wrink our goal is to match every client with the perfect luxury" +
+    "real-estate home. Whether it be temporary or permanent, we have the realtors and" +
+    "the resources to get the job done, not only in a timer manner, but a 100% satisfying" +
+    "manner. This is evident by our ratings of top luxury real-estate firm 5 years in a row by our" +
+    "peers in the luxury real-estate industry. Our mission statement is a short, yet powerful one. Customer satisfaction" +
+    "comes first and being a realtor comes second."
 ];
 export const luxuryProperties = {
   0: {
@@ -220,6 +220,6 @@ export const luxuryProperties = {
   },
   3: {
     img: luxury4,
-    text: "Canal Beach"
+    text: "Towering Skyline"
   }
 };
