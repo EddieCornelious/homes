@@ -50,14 +50,18 @@
   -ms-flex-pack: distribute;
   justify-content: space-around;
   color: white;
+
   p,
   .logo {
     font-weight: 700;
     margin: 0;
   }
 
+  p {
+    margin-top: 11px;
+  }
+
   .logo {
     font-size: 4rem;
-    margin-top: -3px;
   }
 }
