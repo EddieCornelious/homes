@@ -24,7 +24,7 @@ const RealtorCard = props => {
 };
 const RealtorsSection = () => {
   return (
-    <section className="realtors__section .blend-multiply">
+    <section className="realtors__section blend-multiply">
       <div className="container">
         <h1>Our Realtors</h1>
         <div className="row">
