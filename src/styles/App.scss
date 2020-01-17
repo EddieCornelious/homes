@@ -11,15 +11,6 @@
 }
 
 .blend-multiply {
-  display: block;
-  margin: 30px auto;
-  width: 40%;
-  height: 400px;
-  background-size: cover;
-  background-position: center center;
-  background-blend-mode: multiply;
-  background-image: url('https://raw.githubusercontent.com/idevsoftware/js-background-blend-mode/master/demo.jpg');
-  background-color: rgba(255, 0, 0, 0.75);
 }
 
 html,
@@ -46,7 +37,7 @@ html {
 }
 img {
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 body {
   font-family: "Spectral";
@@ -108,8 +99,8 @@ video {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   z-index: 99;
 }
 
