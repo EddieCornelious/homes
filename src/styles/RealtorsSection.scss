@@ -3,8 +3,8 @@
   margin-top: 12rem;
   padding: 12rem 0 12rem 0;
   background-color: $primary;
-  background-image: url("../images/hero.jpg");
-  background-blend-mode: multiply;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(53, 20, 49, 0.8))),
+    url("../images/hero.jpg");
   color: white;
   background-repeat: no-repeat;
   background-size: cover;
@@ -17,7 +17,6 @@
 }
 
 .realtor__card__top {
-
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -25,8 +24,8 @@
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
 }
 .realtor__card__bottom {
   font-size: 1.5rem;
@@ -48,7 +47,7 @@
 
   img {
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     width: 10rem;
     border-radius: 50%;
     height: 10rem;
