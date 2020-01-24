@@ -13,6 +13,7 @@ import RealtorsSection from "./RealtorsSection.js";
 import Slider from "./Slider.js";
 import LuxurySection from "./LuxurySection.js";
 import Logo from "./Logo.js";
+import ResponsiveNav from "./ResponsiveNav.js";
 
 import PropertyDetails from "./PropertyDetails.js";
 
@@ -42,6 +43,7 @@ class App extends React.Component {
           closeDetail={this.closeDetail}
           active={this.state.active}
         />
+        <ResponsiveNav />
         <Nav />
         <section className="header">
           <div className="header__content">
