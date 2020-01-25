@@ -70,7 +70,7 @@ class App extends React.Component {
             <h3>THE WORLD BEST REALESTATE</h3>
             <Logo />
             <p>#106, 1008 BEACH AVENUE, Columbus OH, V6E 1T7</p>
-            <p>©2019 Company Name CORP. ALL RIGHTS RESERVED.</p>
+            <p>©2019 John & Wrink. ALL RIGHTS RESERVED.</p>
           </div>
         </footer>
       </React.Fragment>
