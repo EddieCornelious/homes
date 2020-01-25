@@ -5,6 +5,9 @@
   @include respond(phone) {
     display: block;
   }
+  background: white;
+  padding: 10px;
+  border-radius: 50%;
   display: none;
   position: fixed;
   top: 50px;
@@ -50,10 +53,10 @@
   display: block;
   width: 33px;
   height: 4px;
-  margin-bottom: 5px;
+  margin: 5px 0;
   position: relative;
 
-  background: gray;
+  background: $primary;
   border-radius: 3px;
 
   z-index: 1;
@@ -104,7 +107,7 @@
 #menu {
   position: absolute;
   width: 300px;
-  margin: -100px 0 0 -50px;
+  margin: -100px 0 0 -62px;
   padding: 50px;
   padding-top: 125px;
   min-height: 100vh;
