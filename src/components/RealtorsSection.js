@@ -9,7 +9,7 @@ const RealtorCard = props => {
     <div className="realtor__card">
       <div className="realtor__card__top">
         <div className="realtor__card__left">
-          <img alr="realtor headshot" src={data.img} />
+          <img alt="realtor headshot" src={data.img} />
         </div>
 
         <div className="realtor__card__right">
