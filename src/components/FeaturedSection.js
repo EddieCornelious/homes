@@ -1,13 +1,16 @@
 import "../styles/FeaturedSection.scss";
 import React from "react";
 import { homes } from "./data.js";
+import LazyLoad from "react-lazyload";
 
 const PropertyCard = props => {
   const data = homes[props.id];
   return (
     <div className="property__card">
       <div className="property__card__top">
-        <img alt="property image" src={data.img} />
+        <LazyLoad offset={400}>
+          <img alt="property image" src={data.img} />
+        </LazyLoad>
         <a className="availability" href="#">
           {data.status === 1 ? "for sale" : "for sale"}
         </a>

@@ -131,7 +131,7 @@ div.bottom__button {
   border-bottom: 1px solid #eee;
   background-color: $white;
   color: $primary;
-  padding : 1rem 0;
+  padding: 1rem 0;
   h2 {
     font-size: 2rem;
     margin: 0;
@@ -141,7 +141,6 @@ div.bottom__button {
     margin: 0;
   }
 }
-
 
 .card__bottom__row {
   padding: 1rem 0;
@@ -160,7 +159,7 @@ div.bottom__button {
   justify-content: space-around;
   height: 33.3%;
 }
-.card__bottom__row:not(:last-of-type){
+.card__bottom__row:not(:last-of-type) {
   border-bottom: 1px solid #eee;
 }
 .card__bottom__row p {

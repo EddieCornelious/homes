@@ -3,7 +3,6 @@ import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import "font-awesome/css/font-awesome.css";
 import "owl.carousel";
-
 import "../styles/App.scss";
 import React from "react";
 import Nav from "./Nav.js";
@@ -63,9 +62,11 @@ class App extends React.Component {
         <LuxurySection />
         <footer>
           <div className="overlay">&nbsp;</div>
+
           <video autoPlay={true} loop={true} muted={true} playsInline={true}>
             <source type="video/mp4" src={vid} />
           </video>
+
           <div className="footer__content">
             <h3>THE WORLD BEST REALESTATE</h3>
             <Logo />

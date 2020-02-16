@@ -1,5 +1,6 @@
 import "../styles/Campaign.scss";
 import React from "react";
+import LazyLoad from "react-lazyload";
 
 const Campaign = () => {
   return (
@@ -22,7 +23,9 @@ const Campaign = () => {
             </div>
           </div>
           <div className="col-md-6">
-            <div className="campaign__right">&nbsp;</div>
+            <LazyLoad offset={400} height={"64rem"}>
+              <div className="campaign__right">&nbsp;</div>
+            </LazyLoad>
           </div>
         </div>
       </div>

@@ -19,14 +19,14 @@
   user-select: none;
 }
 
-#menuToggle a {
+#menuToggle li a {
   text-decoration: none;
   color: #232323;
 
   transition: color 0.3s ease;
 }
 
-#menuToggle a:hover {
+#menuToggle li a:hover {
   color: $primary;
 }
 

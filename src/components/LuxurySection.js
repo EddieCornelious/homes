@@ -1,6 +1,7 @@
 import "../styles/LuxurySection.scss";
 import React from "react";
 import { luxuryProperties, luxuryTextData } from "./data.js";
+import LazyLoad from "react-lazyload";
 
 const LuxuryText = props => {
   return (
@@ -19,30 +20,34 @@ const LuxuryOption = props => {
   const spaceIndex = data.text.indexOf(" ");
 
   return (
-    <div className="luxury__option">
-      <div
-        style={{
-          backgroundImage:
-            "linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(" +
-            data.img +
-            ")"
-        }}
-        className="luxury__bg"
-      >
-        &nbsp;
+    <LazyLoad height={"50vh"} offset={400}>
+      <div className="luxury__option">
+        <div
+          style={{
+            backgroundImage:
+              "linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(" +
+              data.img +
+              ")"
+          }}
+          className="luxury__bg"
+        >
+          &nbsp;
+        </div>
+        <div className="luxury__content">
+          <h3>
+            <span className="first__word">
+              {data.text.slice(0, spaceIndex)}
+            </span>
+            <span className="second__word">
+              {data.text.slice(spaceIndex + 1)}
+            </span>
+          </h3>
+          <a className="luxury__btn" href="#">
+            view
+          </a>
+        </div>
       </div>
-      <div className="luxury__content">
-        <h3>
-          <span className="first__word">{data.text.slice(0, spaceIndex)}</span>
-          <span className="second__word">
-            {data.text.slice(spaceIndex + 1)}
-          </span>
-        </h3>
-        <a className="luxury__btn" href="#">
-          view
-        </a>
-      </div>
-    </div>
+    </LazyLoad>
   );
 };
 

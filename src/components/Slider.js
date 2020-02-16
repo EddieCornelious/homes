@@ -6,7 +6,7 @@ const SlideItem = props => {
   const data = cities[props.id];
   return (
     <div className="item">
-      <img src={data.img} />
+      <img alt="international location" src={data.img} />
       <div className="slide__item__info">
         <a href="#">{data.name}&rarr;</a>
       </div>
