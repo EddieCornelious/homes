@@ -7,16 +7,15 @@ import "../styles/App.scss";
 import React from "react";
 import Nav from "./Nav.js";
 import FeaturedSection from "./FeaturedSection.js";
-import Campaign from "./Campaign.js";
-import RealtorsSection from "./RealtorsSection.js";
-import Slider from "./Slider.js";
-import LuxurySection from "./LuxurySection.js";
 import Logo from "./Logo.js";
 import ResponsiveNav from "./ResponsiveNav.js";
-
-import PropertyDetails from "./PropertyDetails.js";
-
 import vid from "../images/traffic.mp4";
+
+const Campaign = React.lazy(() => import("./Campaign.js"));
+const RealtorsSection = React.lazy(() => import("./RealtorsSection.js"));
+const Slider = React.lazy(() => import("./Slider.js"));
+const LuxurySection = React.lazy(() => import("./LuxurySection.js"));
+const PropertyDetails = React.lazy(() => import("./PropertyDetails.js"));
 
 class App extends React.Component {
   state = {
@@ -38,11 +37,14 @@ class App extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <PropertyDetails
-          closeDetail={this.closeDetail}
-          active={this.state.active}
-        />
-        <ResponsiveNav />
+        <React.Suspense fallback={<div>Loading...</div>}>
+          <PropertyDetails
+            closeDetail={this.closeDetail}
+            active={this.state.active}
+          />
+
+          <ResponsiveNav />
+        </React.Suspense>
         <Nav />
         <section className="header">
           <div className="header__content">
@@ -53,13 +55,15 @@ class App extends React.Component {
         </section>
 
         <FeaturedSection toggleDetail={this.toggleDetail} />
-        <Campaign />
-        <RealtorsSection />
-        <Slider />
-        <div className="slider__bottom">
-          <a href="#">International Properties&rarr;</a>
-        </div>
-        <LuxurySection />
+        <React.Suspense fallback={<div>Loading...</div>}>
+          <Campaign />
+          <RealtorsSection />
+          <Slider />
+          <div className="slider__bottom">
+            <a href="#">International Properties&rarr;</a>
+          </div>
+          <LuxurySection />
+        </React.Suspense>
         <footer>
           <div className="overlay">&nbsp;</div>
 
