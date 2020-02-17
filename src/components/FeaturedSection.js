@@ -8,7 +8,7 @@ const PropertyCard = props => {
   return (
     <div className="property__card">
       <div className="property__card__top">
-        <LazyLoad offset={400}>
+        <LazyLoad offset={200}>
           <img alt="property image" src={data.img} />
         </LazyLoad>
         <a className="availability" href="#">

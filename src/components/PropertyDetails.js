@@ -1,7 +1,6 @@
 import "../styles/PropertyDetails.scss";
 import React from "react";
 import { homes } from "./data.js";
-const $ = window.$;
 
 const SlideItem = ({ imgUrl }) => {
   return (
