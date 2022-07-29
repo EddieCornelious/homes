@@ -5,16 +5,13 @@
   "dependencies": {
     "bootstrap": "^3.4.1",
     "font-awesome": "^4.7.0",
-    "netlify-cli": "^2.25.0",
-    "node-sass": "^4.13.1",
     "owl.carousel": "^2.3.4",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-lazyload": "^2.6.5",
     "react-responsive-carousel": "^3.1.51",
     "react-router-dom": "^5.0.0",
-    "react-router-hash-link": "^1.2.1",
-    "react-scripts": "2.1.8"
+    "react-router-hash-link": "^1.2.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -26,5 +23,11 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "browserslist": []
-}
+  "browserslist": [
+    "last 100 versions"
+  ],
+  "devDependencies": {
+    "netlify-cli": "^10.12.1",
+    "react-scripts": "^5.0.1",
+    "sass": "^1.54.0"
+  }
