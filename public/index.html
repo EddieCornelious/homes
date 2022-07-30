@@ -48,30 +48,30 @@
       crossorigin="anonymous"
     ></script>
     <script>
-      $(document).ready(function() {
-        var owl = $(".int__carousel.owl-carousel");
+      $(document).ready(function () {
+        var owl = $('.int__carousel.owl-carousel');
         owl.owlCarousel({
           items: 5,
           loop: true,
           margin: 0,
-          autoplay: true,
-          autoplayTimeout: 3000,
+          autoplay: false,
+          autoplayTimeout: 50000,
           autoplayHoverPause: true,
           dots: false,
           responsive: {
             300: {
-              items: 2
+              items: 2,
             },
             600: {
-              items: 3
+              items: 3,
             },
             1000: {
-              items: 5
-            }
-          }
+              items: 5,
+            },
+          },
         });
 
-        $(".detail__carousel.owl-carousel").owlCarousel({
+        $('.detail__carousel.owl-carousel').owlCarousel({
           items: 1,
           arrows: true,
           loop: false,
@@ -79,8 +79,8 @@
           nav: true,
           navText: [
             '<i class="fa fa-angle-left" aria-hidden="true"></i>',
-            '<i class="fa fa-angle-right" aria-hidden="true"></i>'
-          ]
+            '<i class="fa fa-angle-right" aria-hidden="true"></i>',
+          ],
         });
       });
     </script>

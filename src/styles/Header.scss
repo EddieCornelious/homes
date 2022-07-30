@@ -1,30 +1,40 @@
-@import "variables";
-@import "responsive";
+@import 'variables';
+@import 'responsive';
 
 .header {
   height: 100vh;
-  background-image: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(rgba(0, 0, 0, 0.8)),
-      to(rgba(53, 20, 49, 0.8))
-    ),
-    url("../images/hero.jpg");
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+  position: sticky;
   width: 100%;
+
+  &::before {
+    content: '';
+    background: $primary;
+    opacity: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+  }
+
+  video {
+    object-fit: cover;
+    min-height: 100vh;
+    min-width: 100vw;
+  }
   @include respond(phone) {
     padding: 1rem;
   }
 
   .header__content {
     text-align: center;
-    position: relative;
-    top: 40%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: $secondary;
+    z-index: 99;
     h1 {
       font-size: 6rem;
     }

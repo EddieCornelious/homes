@@ -1,36 +1,36 @@
-import "bootstrap/dist/css/bootstrap.css";
-import "owl.carousel/dist/assets/owl.carousel.css";
-import "owl.carousel/dist/assets/owl.theme.default.css";
-import "font-awesome/css/font-awesome.css";
-import "owl.carousel";
-import "../styles/App.scss";
-import React from "react";
-import Nav from "./Nav.js";
-import FeaturedSection from "./FeaturedSection.js";
-import PropertyDetails from "./PropertyDetails.js";
-import Logo from "./Logo.js";
-import ResponsiveNav from "./ResponsiveNav.js";
-import vid from "../images/traffic.mp4";
-
-import Campaign from "./Campaign.js";
-import RealtorsSection from "./RealtorsSection.js";
-import Slider from "./Slider.js";
-import LuxurySection from "./LuxurySection.js";
+import 'bootstrap/dist/css/bootstrap.css';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
+import 'font-awesome/css/font-awesome.css';
+import 'owl.carousel';
+import '../styles/App.scss';
+import React from 'react';
+import Nav from './Nav.js';
+import FeaturedSection from './FeaturedSection.js';
+import PropertyDetails from './PropertyDetails.js';
+import Logo from './Logo.js';
+import ResponsiveNav from './ResponsiveNav.js';
+import vid from '../images/traffic.mp4';
+import video from '../villa.mp4';
+import Campaign from './Campaign.js';
+import RealtorsSection from './RealtorsSection.js';
+import Slider from './Slider.js';
+import LuxurySection from './LuxurySection.js';
 
 class App extends React.Component {
   state = {
-    active: null
+    active: null,
   };
 
-  toggleDetail = homeId => {
+  toggleDetail = (homeId) => {
     this.setState({
-      active: homeId
+      active: homeId,
     });
   };
 
   closeDetail = () => {
     this.setState({
-      active: null
+      active: null,
     });
   };
 
@@ -44,6 +44,9 @@ class App extends React.Component {
         <ResponsiveNav />
         <Nav />
         <section className="header">
+          <video autoPlay={true} muted={true} loop={true}>
+            <source src={video} type="video/mp4" />
+          </video>
           <div className="header__content">
             <h1>Invest in Luxury.</h1>
             <h1>Live in Nature.</h1>

@@ -1,15 +1,26 @@
-@import "variables";
+@import 'variables';
 .realtors__section {
   margin-top: 12rem;
   padding: 12rem 0 12rem 0;
-  background-color: $primary;
-  background: $primary;
-  background-image: url("../images/hero.jpg");
-  background-blend-mode: multiply;
+  background-image: url('../images/hero.jpg');
   color: white;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  position: relative;
+  z-index: 99;
+
+  &::after {
+    content: '';
+    background: $primary;
+    opacity: 80%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -99;
+  }
 
   h1 {
     margin: 0;
