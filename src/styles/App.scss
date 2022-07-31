@@ -1,5 +1,5 @@
-@import "variables";
-@import "responsive";
+@import 'variables';
+@import 'responsive';
 
 * {
   margin: 0;
@@ -22,12 +22,7 @@ html {
   @include respond(desktop) {
     font-size: 9px;
   }
-  @include respond(tab-land) {
-    font-size: 8px;
-  }
-  @include respond(tab-port) {
-    font-size: 7px;
-  }
+
   @include respond(phone) {
     font-size: 6px;
   }
@@ -37,17 +32,18 @@ img {
   object-fit: cover;
 }
 body {
-  font-family: "Spectral";
+  font-family: 'Spectral';
   overflow-x: hidden;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
+  font-size: 1.6rem;
 }
 
 .no-gutters {
   margin-right: 0;
   margin-left: 0;
 }
-.no-gutters > [class^="col-"],
-.no-gutters > [class*=" col-"] {
+.no-gutters > [class^='col-'],
+.no-gutters > [class*=' col-'] {
   padding-right: 0;
   padding-left: 0;
 }

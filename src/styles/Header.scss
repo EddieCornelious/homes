@@ -39,11 +39,21 @@
       font-size: 6rem;
     }
     a {
-      padding: 2rem 2rem;
       background-color: white;
-      color: $primary;
+      color: inherit;
       display: inline-block;
       margin-top: 1rem;
+      border: 3px solid #fff;
+      background: transparent;
+      padding: 1.5rem 7.5rem;
+      min-width: 139px;
+      border-radius: 100px;
+      font-size: 1.6rem;
+      transition: background-color 1s;
+
+      &:hover {
+        background-color: black;
+      }
     }
   }
 }
