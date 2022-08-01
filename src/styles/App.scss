@@ -17,14 +17,14 @@ body {
 }
 
 html {
-  font-size: 10px;
+  font-size: 62.5%;
 
   @include respond(desktop) {
-    font-size: 9px;
+    font-size: 56.25%;
   }
 
   @include respond(phone) {
-    font-size: 6px;
+    font-size: 43.75%;
   }
 }
 img {
@@ -32,9 +32,9 @@ img {
   object-fit: cover;
 }
 body {
-  font-family: 'Spectral';
+  font-family: 'PlayFair Display';
   overflow-x: hidden;
-  font-family: 'Montserrat';
+
   font-size: 1.6rem;
 }
 
